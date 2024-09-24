@@ -91,10 +91,11 @@ export default function RoundupDetailScreen() {
               {roundup.recipes.map((recipe, index) => (
                 <View key={index} style={styles.relatedWrapper}>
                   <Featured
+                    key={recipe.id}
                     image={recipe.image}
                     title={recipe.title}
                     author={recipe.author}
-                    rating={recipe.rating?.toString()}
+                    rating={recipe.rating}
                     length={recipe.length}
                     onPress={() => navigateToRecipeDetails(router, recipe)}
                   />

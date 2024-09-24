@@ -29,7 +29,7 @@ import useDynamicStyles from '@/constants/Styles';
 import { Colors } from '@/constants/Colors'; 
 import { useColorScheme } from '@/hooks/useColorScheme'; 
 import Row from '@/components/Row';  
-import { navigateToRecipeDetails } from '@/utils/navigationUtils';  
+import { navigateToMovieDetails } from '@/utils/navigationUtils';  
 
 const moviesData = require('@/data/movies.json');
 

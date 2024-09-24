@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   featuredImage: {
     width: '100%',
     height: 120,  
-    resizeMode: 'cover',  // Make sure images fit sort of correctly
+    resizeMode: 'cover',
   },
   featuredContent: {
     padding: 8,

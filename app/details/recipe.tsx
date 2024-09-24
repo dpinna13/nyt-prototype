@@ -97,19 +97,19 @@ export default function RecipeDetailScreen() {
                   image={movie.image}
                   title={movie.title}
                   author={movie.author}
-                  rating={movie.type}
+                  rating={movie.rating}
                   length={movie.length}
                   onPress={() => router.push({
                     pathname: '/details/movie',
                     params: {
                       title: movie.title,
                       description: movie.description,
+                      author: movie.author,
+                      length: movie.length,
+                      rating: movie.rating,
                       image: movie.image,
                       article: movie.article,
                       id: movie.id,
-                      rating: movie.rating,
-                      length: movie.length,
-                      author: movie.author,
                       recipes: JSON.stringify(movie.recipes),
                     }
                   })}
