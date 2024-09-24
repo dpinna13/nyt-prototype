@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# NYT Prototype
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native project created using Expo that showcases recipes and movies with detailed views, leveraging components like parallax scroll views, dynamic themes, and featured cards.
 
-## Get started
+## Table of Contents
 
-1. Install dependencies
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screens](#screens)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-   ```bash
-   npm install
+## Project Overview
+
+The NYT Prototype is a mobile app designed to present curated lists of recipes and movies, each with detailed descriptions and related items. It uses a modern design approach, including parallax scroll views and dynamic themes that switch based on the device’s color scheme.
+
+This project uses:
+- **React Native** with **Expo** for cross-platform development.
+- Custom components like `ParallaxScrollView`, `Row`, and `Featured`.
+- Dynamic theming with light and dark modes via a custom `Colors` configuration.
+
+## Features
+
+- Parallax scroll views for engaging, dynamic content.
+- Themed components with support for both light and dark mode.
+- Featured card components for recipes and movies.
+- Dynamic routing and navigation between screens with Expo Router.
+- Smooth animations and transitions between screens.
+
+## Installation
+
+To set up and run this project locally:
+
+Clone the repository:
    ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
+   git clone git@github.com:dpinna13/nyt-prototype.git
    ```
+Navigate to the project directory:
 
-In the output, you'll find options to open the app in a
+```
+cd nyt-prototype
+```
+Install dependencies and run 
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Once the app is running, you can navigate through the home screen to see lists of recipes and movies. Each item is clickable, leading to a detail page with more information, and related content.
 
-## Learn more
+Screens
 
-To learn more about developing your project with Expo, look at the following resources:
+Home Screen:
+Displays a list of either recipes or movies (depending on the selected tab), each represented by cards.
+On tapping a card, you are directed to the detail screen for that item.
+Recipe Detail Screen:
+Shows a parallax view of the selected recipe with detailed information, related movies, and an article section.
+Movie Detail Screen:
+Similar to the Recipe detail screen but displays movie-specific content with related recipes.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Project Structure
 
-## Join the community
+```
+.
+├── assets              # Contains images and other static assets
+├── components          # Reusable components like Featured, Row, ParallaxScrollView
+├── constants           # Constants like colors, styles
+├── data                # JSON files with recipe and movie data
+├── hooks               # Custom hooks (e.g., useColorScheme)
+├── screens             # Main screens like HomeScreen, MovieDetailScreen, RecipeDetailScreen
+├── utils               # Utility functions for navigation and other logic
+├── App.js              # Entry point of the app
+├── README.md           # This file
+└── package.json        # Project dependencies and scripts
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
