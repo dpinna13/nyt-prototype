@@ -6,15 +6,14 @@ A React Native project created using Expo that showcases recipes and movies with
 
 - [Project Overview](#project-overview)
 - [Features](#features)
+- [Figma Design](#Figma-designs)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Screens](#screens)
-- [Project Structure](#project-structure)
 
   
 ## Project Overview
 
 The NYT Prototype is a mobile app designed to present curated lists of recipes and movies, each with detailed descriptions and related items. It uses a modern design approach, including parallax scroll views and dynamic themes that switch based on the device’s color scheme.
+It took about 2 days and a half to create the whole project from start to finish.
 
 This project uses:
 - **React Native** with **Expo** for cross-platform development.
@@ -28,6 +27,11 @@ This project uses:
 - Featured card components for recipes and movies.
 - Dynamic routing and navigation between screens with Expo Router.
 - Smooth animations and transitions between screens.
+
+## Figma Designs
+
+Initial design explorations are collected in Figma, with the feature and content map and list of requirement. Additionally, there are two sample flow that users would be able to complete using the prototype. Finally, there are included the initial lo-fi screenshots of the prototype at the end of day one.
+[Figma designs](https://www.figma.com/design/oli7pCOBOBdILlVaAXItZF/NYT-prototype?node-id=0-1)
 
 ## Installation
 
@@ -64,15 +68,15 @@ Project Structure
 
 ```
 .
-├── assets              # Contains images and other static assets
-├── components          # Reusable components like Featured, Row, ParallaxScrollView
-├── constants           # Constants like colors, styles
-├── data                # JSON files with recipe and movie data
-├── hooks               # Custom hooks (e.g., useColorScheme)
-├── screens             # Main screens like HomeScreen, MovieDetailScreen, RecipeDetailScreen
-├── utils               # Utility functions for navigation and other logic
-├── App.js              # Entry point of the app
-├── README.md           # This file
-└── package.json        # Project dependencies and scripts
+├── assets                # Contains images and other static assets
+├── components            # Reusable components like Featured, Row, ParallaxScrollView
+├── constants             # Constants like colors, styles
+├── data                  # JSON files with recipe and movie data
+├── hooks                 # Custom hooks (e.g., useColorScheme)
+├── screens               # Main screens like HomeScreen, MovieDetailScreen, RecipeDetailScreen
+├── utils                 # Utility functions for navigation and other logic
+├── app/(tabs)/index.tsx  # Entry point of the app
+├── README.md             # This file
+└── package.json          # Project dependencies and scripts
 
 ```
