@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "navigationApp",
-    "slug": "navigationApp",
+    "name": "Chefs on Screen",
+    "slug": "Chefsonscreen",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.diegopinna.Chefsonscreen"
     },
     "android": {
       "adaptiveIcon": {
@@ -31,6 +32,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "deaded2d-f6f5-4ff8-b8eb-ab30cf53d82b"
+      }
     }
   }
 }
