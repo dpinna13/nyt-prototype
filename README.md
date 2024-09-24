@@ -10,9 +10,8 @@ A React Native project created using Expo that showcases recipes and movies with
 - [Usage](#usage)
 - [Screens](#screens)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
+  
 ## Project Overview
 
 The NYT Prototype is a mobile app designed to present curated lists of recipes and movies, each with detailed descriptions and related items. It uses a modern design approach, including parallax scroll views and dynamic themes that switch based on the device’s color scheme.
